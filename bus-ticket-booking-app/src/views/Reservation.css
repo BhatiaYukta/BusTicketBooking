@@ -1,0 +1,94 @@
+/* src/views/Reservation.css */
+.bus-layout {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+  .deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .seat {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 2px; /* Adjust the margin for better spacing */
+    position: relative; /* Add relative positioning for the pseudo-element */
+
+    /* Add the following styles for the pseudo-element */
+    &::after {
+        content: "";
+        width: 10px; /* Width of the rectangle */
+        height: 20px; /* Height of the rectangle */
+        background-color: #ded5d5; /* Color of the rectangle */
+        /* border: #333;
+        border-width: 1px; */
+        position: absolute;
+        right: 2px; /* Align to the right */
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Adjust for vertical centering */
+    }
+}
+
+  
+  .seat.selected {
+    background-color: #5cb85c; /* Green color for selected seats */
+    color: white;
+  }
+  
+  .lower-deck {
+    background-color: #add8e6; /* Light blue for lower deck */
+  }
+  
+  .upper-deck {
+    background-color: #c5d1ad; /* Silver for upper deck */
+  }
+  
+  .aisle-seat {
+    background-color: #f0e68c; /* Aisle seat color */
+  }
+  
+  .additional-seats {
+    background-color: #ff4500; /* Additional seats color */
+    color: white;
+  }
+  
+  .deck-outline {
+    border: 2px solid #333;
+    padding: 5px;
+    margin: 10px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+
+.instruction-box {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light gray background for the box */
+  border-radius: 6px; /* Rounded corners for the box */
+  margin-bottom: 15px;
+}
+
+.instruction-label {
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use your preferred font-family */
+  color: #281212; /* Dark color for the text */
+}
+
+
+
+  
