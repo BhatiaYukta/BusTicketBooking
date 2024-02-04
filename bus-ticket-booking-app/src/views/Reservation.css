@@ -22,6 +22,7 @@
     cursor: pointer;
     margin: 2px; /* Adjust the margin for better spacing */
     position: relative; /* Add relative positioning for the pseudo-element */
+    background-color: #7aa67a;
 
     /* Add the following styles for the pseudo-element */
     &::after {
@@ -89,6 +90,8 @@
   color: #281212; /* Dark color for the text */
 }
 
-
-
-  
+.seat.reserved {
+  background-color: #e65f5f; /* Grey out reserved seats */
+  color: #000000;
+  cursor: not-allowed;
+}
